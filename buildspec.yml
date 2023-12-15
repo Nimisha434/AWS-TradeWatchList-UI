@@ -6,7 +6,6 @@ phases:
       - aws --version
       #- eval $(aws ecr get-login-password --no-include-email --region ap-southeast-1)
       - aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 101614871148.dkr.ecr.ap-southeast-1.amazonaws.com
-      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=101614871148.dkr.ecr.ap-southeast-1.amazonaws.com/tradewatchlistui
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
