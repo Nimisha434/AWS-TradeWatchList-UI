@@ -12,7 +12,9 @@ RUN mkdir -p /app/node_modules
 RUN chown -R node:node /app
 
 # install node modules
-RUN npm install
+rm -Rf node_modules && rm package-lock.json
+npm cache clean --force
+npm install --force
 
 COPY . .
 
