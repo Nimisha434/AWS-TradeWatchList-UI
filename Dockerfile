@@ -15,6 +15,7 @@ RUN chown -R node:node /app
 RUN rm -Rf node_modules && rm package-lock.json
 RUN npm cache clean --force
 RUN npm install --force
+RUN mkdir node_modules/.cache && chmod -R 777 node_modules/.cache
 
 COPY . .
 
