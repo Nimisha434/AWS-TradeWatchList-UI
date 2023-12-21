@@ -1,4 +1,4 @@
 {
-    "REACT_APP_STOCKS_URL": "http://18.142.227.165:8777//tradeRequest/allStocks",
-    "REACT_APP_CURRENCY_URL": "http://18.142.227.165:8777//tradeRequest/currencies"
+    "REACT_APP_STOCKS_URL": "http://18.142.227.165:8777/tradeRequest/allStocks",
+    "REACT_APP_CURRENCY_URL": "http://18.142.227.165:8777/tradeRequest/currencies"
 }
