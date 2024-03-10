@@ -1,4 +1,4 @@
 {
-    "REACT_APP_STOCKS_URL": "http://54.151.155.64:8777/tradeRequest/allStocks",
-    "REACT_APP_CURRENCY_URL": "http://54.151.155.64:8777/tradeRequest/currencies"
+    "REACT_APP_STOCKS_URL": "https://tradewatchlistservice-alb-1322432530.ap-southeast-1.elb.amazonaws.com/tradeRequest/allStocks",
+    "REACT_APP_CURRENCY_URL": "https://tradewatchlistservice-alb-1322432530.ap-southeast-1.elb.amazonaws.com/tradeRequest/currencies"
 }
